@@ -25,8 +25,8 @@ export const signup = async (req,res) => {
 
         //https://avatar-placeholder.iran.liara.run/
 
-        const boyProfilePic = `https://avatar-placeholder.iran.liara.run/public/boy?username=${username}`;
-        const girlProfilePic = `https://avatar-placeholder.iran.liara.run/public/girl?username=${username}`;
+        const boyProfilePic = `https://avatar.iran.liara.run/public/boy?username=${username}`;
+        const girlProfilePic = `https://avatar.iran.liara.run/public/girl?username=${username}`;
 
         const newUser = new User ({
             fullName,
@@ -64,10 +64,20 @@ export const signup = async (req,res) => {
 }
 
 export const login = async (req,res) => {
-    try{
+    // console.log("Login request received:", req.headers);
+    // console.log("Parsed Body:", req.body); // Debugging: Check received data
 
+    try{
+        console.log("Login request received:", req.body); // Log incoming request
         const { username , password} = req.body;
+        if (!username || !password) {
+            // console.log("❌ Missing username or password");
+            return res.status(400).json({ error: "Username and password are required" });
+        }
+        // console.log("Searching for username:", username);
         const user = await User.findOne({username});
+        //console.log("User found in DB:", user); // Log user data
+
         const isPasswordCorrect = await bcrypt.compare(password , user?.password || "");
 
         if(!user || !isPasswordCorrect){
