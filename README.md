@@ -1,5 +1,5 @@
 # Project Title
-Real-Time Chat App with Video Calling
+Real-Time Chat App with Video Calling (Chatsphere)
 
 ## 📌 Overview
 This is a real-time chat application built with the MERN stack, featuring low-latency messaging through Socket.io and seamless video calling via the Google Meet API.
