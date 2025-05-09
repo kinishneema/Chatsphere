@@ -23,9 +23,17 @@ This is a real-time chat application built with the MERN stack, featuring low-la
    ```bash
    git clone https://github.com/kinishneema/Chatsphere.git
 
+2. Navigate into the project directory:
+   ```bash  
    cd your-repo
-npm install
-npm start
+
+3. Install the required dependencies:
+   ```bash
+   npm install
+
+4. Run the app locally:
+   ```bash
+   npm start
 
 **🌐 Live Demo**
 You can check out the live version of the app here: https://chat-app-dep-aepc.onrender.com/landing
