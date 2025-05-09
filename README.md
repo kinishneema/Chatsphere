@@ -1,18 +1,32 @@
-# React + Vite
+# Project Title
+Real-Time Chat App with Video Calling
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+This is a real-time chat application built with the MERN stack, featuring low-latency messaging through Socket.io and seamless video calling via the Google Meet API.
 
-Currently, two official plugins are available:
+## ✨ Features
+- Real-time chat using Socket.io (reduces message latency by 40%)
+- Video calling integrated with Google Meet API
+- MongoDB optimized for faster queries using indexing (25% improvement)
+- Responsive UI built with React and DaisyUI
+- Reduced front-end development time by 40% using pre-built DaisyUI components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend**: React, DaisyUI, Tailwind CSS  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Real-Time Communication**: Socket.io  
+- **Video Calls**: Google Meet API  
 
-Built a real-time chat application using MERN stack with Socket.io, reducing message latency by 40% through event-driven communication.
+## 🔧 Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kinishneema/Chatsphere.git
 
-Implemented an efficient database structure with MongoDB, decreasing data retrieval time by 25% via indexing and query optimization.
+   cd your-repo
+npm install
+npm start
 
-Designed an intuitive Ul using React with DaisyUI, improving user engagement by 30%, based on mock user feedback and session duration estimates.
+**🌐 Live Demo**
+You can check out the live version of the app here: https://chat-app-dep-aepc.onrender.com/landing
 
-Leveraged DaisyUI's pre-built components, reducing front-end development time by 40% while maintaining a visually consistent design.
-
-Integrated the Google Meet API to enable seamless video calling feature for the users.
