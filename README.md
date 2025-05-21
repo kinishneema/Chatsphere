@@ -31,9 +31,15 @@ This is a real-time chat application built with the MERN stack, featuring low-la
    ```bash
    npm install
 
-4. Run the app locally:
+4. Run Backend:
    ```bash
+   cd backend
    npm run server
+
+5. Run Backend:
+   ```bash
+   cd frontend
+   npm run dev
 
 ## 🌐 Live Demo
 You can check out the live version of the app here: https://chat-app-dep-aepc.onrender.com/landing
