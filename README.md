@@ -36,7 +36,7 @@ This is a real-time chat application built with the MERN stack, featuring low-la
    cd backend
    npm run server
 
-5. Run Backend:
+5. Run Frontend:
    ```bash
    cd frontend
    npm run dev
