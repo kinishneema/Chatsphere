@@ -33,7 +33,7 @@ This is a real-time chat application built with the MERN stack, featuring low-la
 
 4. Run the app locally:
    ```bash
-   npm start
+   npm run server
 
 ## 🌐 Live Demo
 You can check out the live version of the app here: https://chat-app-dep-aepc.onrender.com/landing
